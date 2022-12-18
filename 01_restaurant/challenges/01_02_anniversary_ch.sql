@@ -5,3 +5,9 @@
 -- they plan to bring in their party.
 
 -- Hint: SQLite offers the INTEGER and REAL datatypes
+
+CREATE TABLE customer_response
+(customerID PRIMARY KEY,
+NumberofGuests INT NOT NULL,
+FOREIGN KEY(customerID) REFERENCES customer(customerID));
+
